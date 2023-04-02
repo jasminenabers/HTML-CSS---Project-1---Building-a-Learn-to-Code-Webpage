@@ -1,105 +1,117 @@
-header {
-    background-color: #f2f2f2; 
+html {
+    margin: 0;
 }
 
-button { 
- background-color: #20a8b4;
- padding: 12px;
- border-radius: 10px;
+body {   
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    color:#000;
 }
-button:hover {
+
+#banner {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+#banner header {
+    color:#20a8b4;
+}
+
+#banner header span {
+    color: #ff5c0f;
+}
+
+#banner nav ul {
+    margin: 0;
+    padding-left: 0;
+}
+#banner nav ul li {
+   list-style-type: none;
+   margin-bottom: 10px;
+}
+
+#banner nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#banner nav ul li a:hover {
+    color: #ff5c0f;
+}
+
+#banner nav button {
+    background-color: #20a8b4;
+    color: #fff;
+    border-radius: 10px;
+    border-color: transparent;
+    width: 100%;
+    padding: 12px;
+    text-align: left;
+}
+
+#banner nav button:hover {
     background-color: #ff5c0f;
 }
-/* :hover {
-    color: #ff5c0f;
-} */
 
-span
-{
+#content {
+    padding: 10px;
+}
+#content h3 span {
     color: #ff5c0f; 
 }
 
-@media screen and (min-width:780px)
-{
-    header 
-    {
-        background-color: #f2f2f2;
-        display:flex;
-    }
-    ul
-    { 
-        padding-left:33%;
-    }
-    li
-    {
-        float:right;
-    } 
-    button
-    {
-        width:auto;
-    }
-}
-#box
-{
-    display: flex; 
-    margin-top: 10%;
+#content button {
+    background-color: #20a8b4;
+    color: #fff;
+    border-radius: 10px;
+    border-color: transparent;
+    width: 100%;
+    padding: 12px;
+    text-align: left;
 }
 
-@media screen and (max-width:780px)
-{
-    header {
-        background-color: #f2f2f2;
-        display:flex;
-        flex-direction: column;
-    }
-    ul
-    {
-        margin-left: -10%;
-    }
-    img
-    {
-        display:none;
-    }
-    button
-    {
-        width:100%;
-    }
+#content button:hover {
+    background-color: #ff5c0f;
 }
 
-li
-{
-    list-style: none;
+#content figure img {
+    display: none;
 }
-ul>button
-{
-    float:right;
-}
- 
-a
-{
-    text-decoration: none;
-    color:black; 
-    padding-left: 5px;
-}
-body {
-    font-family: 'Roboto';font-size: 20px;
-}
-img
-{ 
-    width:500%;
-    padding-left: 600%;
-}
-#imgDiv
-{
-    width:5%;
-}
-button
-{
-    color: #fff ;
-}
-#txt
-{
-    color:#20a8b4;
+@media screen and (min-width: 768px) {
+    #banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    #banner nav ul {
+        display: flex;
+    }
+
+    #banner nav ul li {
+        list-style-type: none;
+        margin-left: 10px;
+        margin-bottom: inherit;
+        align-self:center;
+    }
+
+    #content {
+        display: flex;
+    }
+
+    #content figure img {
+        display: inline-block;
+    }
+
+    #banner nav button {
+        width: auto;
+    }
+
+    #content button {
+        width: auto;
+    }
+
 }
 /*
 Website is mobile-responsive, matching the stacked layout on mobile, and the inline layout on desktop, using flexbox.
